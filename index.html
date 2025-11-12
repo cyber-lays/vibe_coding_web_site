@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TERRE D'AVENIR — Accueil</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img alt="TERRE D'AVENIR" src="log.png" class="logo" />
+        <span class="brand-name">TERRE D'AVENIR </span>
+      </div>
+
+      <nav class="nav" id="main-nav">
+        <a href="#accueil" class="nav-link active">Accueil</a>
+        <a href="#apropos" class="nav-link">À propos</a>
+        <a href="#actions" class="nav-link">Nos actions</a>
+        <a href="#temoignages" class="nav-link">Témoignages</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn-outline" href="#contact">Contact</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="accueil" class="hero">
+      <img src="hero.jpg" alt="Volontaires nettoyage plage" class="hero-bg" />
+      <div class="container hero-content">
+        <h1>Ensemble pour un monde plus propre</h1>
+        <p class="lead">Rejoignes notre mission mondiale pour un environnement plus durable</p>
+        <div class="hero-actions">
+          <a href="#actions" class="btn btn-primary">Participer à une action</a>
+          <a href="#don" class="btn btn-light">Faire un don</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-container">
+      <div class="stat">
+        <div class="stat-value">5M</div>
+        <div class="stat-label">Volontaires mobilisés</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">50K</div>
+        <div class="stat-label">Tonnes de déchet collectées</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">100+</div>
+        <div class="stat-label">Pays concernés</div>
+      </div>
+    </section>
+
+    <!-- MISSION -->
+    <section id="apropos" class="mission container">
+      <div class="mission-left">
+        <h2>Notre Mission</h2>
+        <h3>Nettoyer, Améliorer, Préserver</h3>
+        <div class="icons">
+          <div class="icon">
+            <div class="icon-img">🌍</div>
+            <div class="icon-label">Mobilisation Mondiale</div>
+          </div>
+          <div class="icon">
+            <div class="icon-img">🧹</div>
+            <div class="icon-label">Actions Concrètes</div>
+          </div>
+          <div class="icon">
+            <div class="icon-img">🌱</div>
+            <div class="icon-label">Espaces Sains</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mission-right">
+        <img src="con.jpg" alt="Equipe GreenUp" />
+      </div>
+    </section>
+
+    <!-- NOS ACTIONS -->
+    <section id="actions" class="actions container">
+      <h2>Nos Actions</h2>
+      <div class="actions-grid">
+        <article class="card action-card">
+          <img src="net.jpg" alt="Campagnes de nettoyage" />
+          <div class="card-title">Campagnes de nettoyage</div>
+        </article>
+
+        <article class="card action-card">
+          <img src="res.jpg" alt="Sensibilisation" />
+          <div class="card-title">Sensibilisation</div>
+        </article>
+
+        <div class="map-card">
+          <img src="map.png" alt="Carte du monde" />
+          <a class="btn btn-primary small" href="#map">Voir la carte</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTENAIRES & TEMOIGNAGES -->
+    <section class="partners-testimonials container">
+      <div class="partners">
+        <h3>Partenaires</h3>
+        <div class="marquee">
+          <div class="marquee-inner">
+            <div class="marquee-content">
+              <img src="CILT.jpg" alt="Partenaire 1" />
+              <img src="firas nigos.png" alt="Partenaire 2" width="300px" />
+              <img src="Logo.png" alt="Partenaire 3" width="200px" />
+            </div>
+            <div class="marquee-content">
+              <img src="CILT.jpg" alt="Partenaire 1" />
+              <img src="firas nigos.png" alt="Partenaire 2" width="300px" />
+              <img src="Logo.png" alt="Partenaire 3" width="200px" />
+            </div>
+          </div>
+        </div>
+
+
+        <div id="temoignages" class="testimonials">
+          <h3>Témoignages</h3>
+          <div class="testimonial-card">
+            <img src="com.jpg" alt="Village Kivo" />
+            <div class="testimonial-content">
+              <h4>Le Village de Kivo, Afrique Centrale</h4>
+              <p>Une collaboration essentielle pour soutenir les actions locales et la réhabilitation des espaces.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <div class="contact-card">
+        <h2>Contact</h2>
+        <form id="contactForm" novalidate>
+          <label for="name">Nom :</label>
+          <input id="name" name="name" type="text" placeholder="Ton nom" required />
+
+          <label for="email">Email :</label>
+          <input id="email" name="email" type="email" placeholder="ton@email.com" required />
+
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="6" placeholder="Ton message" required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary large">Envoyer</button>
+          </div>
+
+          <div id="formMessage" class="form-message" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <!-- Right column: small contact summary or donation CTA -->
+      <aside class="contact-aside">
+        <div class="aside-box">
+          <h3>Soutenez-nous</h3>
+          <p>Vos dons permettent d’organiser plus d’actions et d’atteindre davantage de communautés.</p>
+          <a href="#don" class="btn btn-primary">Faire un don</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="social">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <span>|</span>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <span>|</span>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 TERRE D'AVENIR — Tous droits réservés</p>
+        <div class="legal-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- MODAL MAP (Fenêtre agrandie) -->
+  <div id="mapModal" class="map-modal">
+    <span class="close-btn" id="closeMap">&times;</span>
+    <img class="map-modal-content" id="mapImage" src="map.png" alt="Carte du monde agrandie" />
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
